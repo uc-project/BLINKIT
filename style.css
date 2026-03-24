@@ -1,125 +1,100 @@
 
 body {
   margin: 0;
-  font-family: 'Poppins', sans-serif;
-  background: #f6f7f9;
+  font-family: Arial;
+  background: #f5f5f5;
 }
 
 /* HEADER */
 .header {
-  background: linear-gradient(135deg, #ffb199, #ff7e5f);
+  background: linear-gradient(#f6c1a6, #fbe4d7);
   padding: 15px;
-  border-radius: 0 0 20px 20px;
-  color: black;
-}
-
-.header-top {
-  display: flex;
-  justify-content: space-between;
 }
 
 .header h2 {
   margin: 0;
-  font-size: 18px;
+  font-size: 20px;
+}
+
+.header span {
+  font-weight: normal;
+  font-size: 14px;
 }
 
 .header p {
-  margin: 0;
-  font-size: 12px;
+  font-size: 14px;
+  color: #333;
 }
 
-.header-icons {
-  display: flex;
-  gap: 10px;
-}
-
-.wallet, .profile {
-  background: white;
-  padding: 8px;
-  border-radius: 50px;
-  font-size: 12px;
-}
-
-/* SEARCH */
-.search {
-  margin-top: 10px;
-  background: white;
-  border-radius: 25px;
+.search-box input {
+  width: 100%;
   padding: 10px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.search input {
+  border-radius: 20px;
   border: none;
-  outline: none;
-  flex: 1;
+  margin-top: 10px;
 }
 
 /* CATEGORY */
 .categories {
   display: flex;
-  overflow-x: auto;
+  gap: 10px;
   margin-top: 10px;
 }
 
 .cat {
-  text-align: center;
-  margin-right: 15px;
+  padding: 8px 12px;
+  background: white;
+  border-radius: 20px;
   font-size: 12px;
-}
-
-.cat i {
-  font-size: 18px;
 }
 
 .cat.active {
-  border-bottom: 2px solid black;
+  background: #ffd84d;
 }
 
-/* FESTIVAL */
-.festival {
-  background: #ffe4d6;
-  margin: 10px;
-  padding: 15px;
-  border-radius: 20px;
+/* NAVRATRI */
+.navratri {
+  background: #fff3e6;
   text-align: center;
+  padding: 20px;
 }
 
-.festival h1 {
-  color: #c40000;
-  margin: 5px 0;
+.navratri h3 {
+  color: #c44;
+  letter-spacing: 2px;
 }
 
-.festival-row {
+.navratri h1 {
+  font-size: 32px;
+  color: #c00;
+}
+
+/* CARDS */
+.cards {
   display: flex;
   gap: 10px;
+  margin-top: 15px;
 }
 
-.festival-card {
+.card {
   flex: 1;
-  background: #ff7e5f;
-  color: white;
-  padding: 15px;
+  background: #ff7a4d;
   border-radius: 15px;
-  font-size: 12px;
-}
-
-/* SECTIONS */
-.section-title {
-  margin-left: 10px;
-}
-
-/* SCROLL */
-.horizontal-scroll {
-  display: flex;
-  overflow-x: auto;
   padding: 10px;
+  color: white;
 }
 
-/* FREQUENT */
-.freq-card {
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* SECTION */
+.section {
+  padding: 15px;
+}
+
+.product {
   background: #dce9e9;
   padding: 10px;
   border-radius: 15px;
@@ -127,23 +102,30 @@ body {
   width: 120px;
 }
 
-/* PRODUCT CARDS */
-.product-card {
-  min-width: 130px;
-  height: 100px;
-  border-radius: 15px;
-  padding: 10px;
-  color: white;
-  font-weight: 500;
-  display: flex;
-  align-items: end;
+.product img {
+  width: 80px;
 }
 
-/* COLORS */
-.gold { background: linear-gradient(135deg, gold, orange); }
-.blue { background: linear-gradient(135deg, #3a7bd5, #00d2ff); }
-.pink { background: linear-gradient(135deg, #ff758c, #ff7eb3); }
-.grey { background: linear-gradient(135deg, #757f9a, #d7dde8); }
+/* FEATURED */
+.featured {
+  display: flex;
+  gap: 10px;
+}
+
+.fcard {
+  flex: 1;
+  background: #fff;
+  border-radius: 15px;
+  padding: 15px;
+  text-align: center;
+}
+
+.badge {
+  background: pink;
+  padding: 3px 8px;
+  border-radius: 10px;
+  font-size: 10px;
+}
 
 /* BOTTOM NAV */
 .bottom-nav {
@@ -153,15 +135,15 @@ body {
   background: white;
   display: flex;
   justify-content: space-around;
-  padding: 10px 0;
   border-top: 1px solid #ddd;
 }
 
-.bottom-nav div {
+.nav-item {
   text-align: center;
+  padding: 10px;
   font-size: 12px;
 }
 
-.bottom-nav .active {
-  color: #ff7e5f;
+.nav-item.active {
+  color: orange;
 }
