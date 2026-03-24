@@ -1,94 +1,109 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blinkit Clone</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blinkit UI</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <!-- HEADER -->
 <div class="header">
-  <h2>Blinkit in <span>17 minutes ⛈️ Rain</span></h2>
-  <p>HOME - Ground floor, House no. 20 ▼</p>
+  <div class="top">
+    <h2>Blinkit in <b>17 minutes</b> 🌧️ Rain</h2>
+    <div class="icons">
+      <span>💰</span>
+      <span>👤</span>
+    </div>
+  </div>
 
-  <div class="search-box">
+  <p class="address">HOME - Ground floor, House no. 20 ▼</p>
+
+  <div class="search">
     <input type="text" placeholder='Search "pet food"'>
   </div>
 
+  <!-- categories -->
   <div class="categories">
-    <div class="cat active">All</div>
-    <div class="cat">Summer</div>
-    <div class="cat">Electronics</div>
-    <div class="cat">Beauty</div>
-    <div class="cat">Decor</div>
+    <div class="cat active">🛍️ All</div>
+    <div class="cat">☀️ Summer</div>
+    <div class="cat">🎧 Electronics</div>
+    <div class="cat">💄 Beauty</div>
+    <div class="cat">🖼️ Decor</div>
   </div>
 </div>
 
-<!-- NAVRATRI BANNER -->
+<!-- NAVRATRI -->
 <div class="navratri">
-  <h3>CELEBRATE</h3>
-  <h1>NAVRATRI</h1>
+  <div class="nav-title">CELEBRATE</div>
+  <div class="nav-main">NAVRATRI</div>
 
-  <div class="cards">
-    <div class="card">
+  <div class="nav-cards">
+
+    <div class="nav-card">
       <img src="img1.jpg">
       <p>Flowers & Pooja Needs</p>
     </div>
 
-    <div class="card">
+    <div class="nav-card">
       <img src="img2.jpg">
       <p>Navratri Specials</p>
     </div>
 
-    <div class="card">
+    <div class="nav-card">
       <img src="img3.jpg">
       <p>Kanjak Store</p>
     </div>
+
   </div>
 </div>
 
 <!-- FREQUENT -->
 <div class="section">
-  <h2>Frequently bought</h2>
+  <h3>Frequently bought</h3>
 
-  <div class="product">
-    <img src="milk.png">
-    <p>Milk, Curd & Paneer</p>
+  <div class="scroll-row">
+    <div class="product-card">
+      <img src="milk.png">
+      <p>Milk, Curd & Paneer</p>
+    </div>
   </div>
 </div>
 
 <!-- FEATURED -->
 <div class="section">
-  <h2>Featured this week</h2>
+  <h3>Featured this week</h3>
 
-  <div class="featured">
-    <div class="fcard">
-      <span class="badge">NEW</span>
+  <div class="scroll-row">
+
+    <div class="featured-card yellow">
+      <span>NEWLY LAUNCHED</span>
       <p>For you</p>
     </div>
 
-    <div class="fcard">
-      <span class="badge">Featured</span>
+    <div class="featured-card">
+      <span>Featured</span>
       <p>Fasting Flours</p>
     </div>
 
-    <div class="fcard">
-      <span class="badge">Featured</span>
-      <p>Face Masks</p>
+    <div class="featured-card">
+      <span>Featured</span>
+      <p>Face Masks & Packs</p>
     </div>
+
   </div>
 </div>
 
 <!-- BOTTOM NAV -->
 <div class="bottom-nav">
-  <div class="nav-item active">🏠<p>Home</p></div>
-  <div class="nav-item">🛒<p>Order Again</p></div>
-  <div class="nav-item">☰<p>Categories</p></div>
-  <div class="nav-item">🖨️<p>Print</p></div>
+  <div class="nav active">🏠<p>Home</p></div>
+  <div class="nav">🛒<p>Order Again</p></div>
+  <div class="nav">⬜<p>Categories</p></div>
+  <div class="nav">🖨️<p>Print</p></div>
 </div>
 
 </body>
